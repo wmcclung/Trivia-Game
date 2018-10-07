@@ -4,7 +4,7 @@ $(document).ready(function() {
   var totalQuiz = 6,
     answers = [
       "tonyHawk",
-      "Birdhouse",
+      "birdhouse",
       "rodneyMullen",
       "california",
       "thrasher",
