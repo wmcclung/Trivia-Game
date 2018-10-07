@@ -8,7 +8,7 @@ $(document).ready(function() {
       "rodneyMullen",
       "california",
       "thrasher",
-      "bodyVarial",
+      "bodyVarial"
     ],
     data = $("input"),
     correctAnswer = 0,
