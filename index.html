@@ -1,15 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
 
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Trivia Game</title>
+    <title>Trivia Game!</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
 </head>
+<header>
+    <h1>Gnarly Sk8 Trivia!!</h1>
+    <h4>Do you rip or do you push mongo?</h4>
+</header>
+<br>
 
 <body>
-    <h1>Trivia Game</h1>
+    <div id="container">
+        <div id=start>
+            <button id="play">Essketit</button>
+        </div>
+        <br>
+        <div id=timer>You have <span id="countdown">30</span> seconds!!</div>
+        <br>
+        <div id="quiz">
+            <div id="question">
+                <form>
+                    <label>Who was the first person to land a 900 on vert in a competition?</label>
+                    <br>
+                    <input type="radio" id="radio" name="answer1" value="buckyLasek"> Bucky Lasek
+                    <br>
+                    <input type="radio" id="radio" name="answer1" value="chadMuska"> Chad Muska
+                    <br>
+                    <input type="radio" id="radio" name="answer1" value="tonyHawk"> Tony Hawk
+                    <br>
+                    <input type="radio" id="radio" name="answer1" value="ryanSheckler"> Ryan Sheckler
+                    <br>
+                    <br>
+                    <label>Aaron "Jaws" Homoki is sponsored by what deck brand? </label>
+                    <br>
+                    <input type="radio" id="radio" name="answer2" value="element"> Element
+                    <br>
+                    <input type="radio" id="radio" name="answer2" value="birdhouse"> Birdhouse
+                    <br>
+                    <input type="radio" id="radio" name="answer2" value="toyMachine"> Toy Machine
+                    <br>
+                    <input type="radio" id="radio" name="answer2" value="blackLabel"> Black Label
+                    <br>
+                    <br>
+                    <label>Who invented the kickflip?</label>
+                    <br>
+                    <input type="radio" id="radio" name="answer3" value="rodneyMullen"> Rodney Mullen
+                    <br>
+                    <input type="radio" id="radio" name="answer3" value="mikeVallely"> Mike Vallely
+                    <br>
+                    <input type="radio" id="radio" name="answer3" value="geneSimmons"> Gene Simmons
+                    <br>
+                    <input type="radio" id="radio" name="answer3" value="travisPastrana"> Travis Pastrana
+                    <br>
+                    <br>
+                    <label>Where was skateboarding created?</label>
+                    <br>
+                    <input type="radio" id="radio" name="answer4" value="spain"> Spain
+                    <br>
+                    <input type="radio" id="radio" name="answer4" value="naperville"> Naperville, IL
+                    <br>
+                    <input type="radio" id="radio" name="answer4" value="minnesota"> Minnesota
+                    <br>
+                    <input type="radio" id="radio" name="answer4" value="california"> California
+                    <br>
+                    <br>
+                    <label>What is a popular skateboarding magazine?</label>
+                    <br>
+                    <input type="radio" id="radio" name="answer5" value="sportsIllustrated"> Sports Illustrated for
+                    Kids
+                    <br>
+                    <input type="radio" id="radio" name="answer5" value="glamour"> Glamour
+                    <br>
+                    <input type="radio" id="radio" name="answer5" value="thrasher"> Thrasher
+                    <br>
+                    <input type="radio" id="radio" name="answer5" value="townAndCountry"> Town and Country
+                    <br>
+                    <br>
+                    <label>A sex change is what?</label>
+                    <br>
+                    <input type="radio" id="radio" name="answer6" value="grind"> Grind
+                    <br>
+                    <input type="radio" id="radio" name="answer6" value="manuel"> Manuel
+                    <br>
+                    <input type="radio" id="radio" name="answer6" value="flip"> Flip
+                    <br>
+                    <input type="radio" id="radio" name="answer6" value="bodyVarial"> Body Varial
+                    <br>
+                </form>
+                <br>
+            </div>
+            <button id="done">Crush Set</button>
+        </div>
+        <div id=results>
+            <h1>RESULTS</h1>
+            <p>Correct: <span id=correct>0</span></p>
+            <p>Incorrect: <span id=incorrect>0</span></p>
+            <p>Missed: <span id=blank>0</span></p>
+            <button id="restart">Another Set?</button>
+        </div>
+    </div>
+    </div>
+    <script src='https://code.jquery.com/jquery-3.3.1.min.js' integrity='sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8='
+        crossorigin='anonymous'></script>
+    <script type="text/javascript" src="assets/javascript/app.js"></script>
+
 </body>
 
 </html>
